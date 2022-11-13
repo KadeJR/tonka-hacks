@@ -23,9 +23,5 @@
 
     li.content_item {
         padding: 0px
-    }
-
-    
-
-    
+    } 
 </style>
