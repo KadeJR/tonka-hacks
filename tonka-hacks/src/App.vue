@@ -1,47 +1,48 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+  import NavBar from "./components/NavBar.vue"
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <header class="nav_bar">
+      <NavBar/>
+    </header>
+    <header>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+    </header>
+    <header class="trending">
+      <Trending/>
+    </header>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<style>
+body {
+  background-color: #202020;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+header.nav_bar {
+  height: 95%;
+  width: 20%;
+  background-color: #272727;
+  border-radius: 10px; 
+  padding: 10px;
+  text-align: center;
+  position: absolute;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+header.content {
+  height: 95%;
+  width: 70%;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+header.trending {
+  height: 95%;
+  width: 20%;
+  background-color: #272727;
+  border-radius: 10px; 
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  left: 78%;
 }
 </style>
